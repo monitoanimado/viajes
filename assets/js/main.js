@@ -1,3 +1,6 @@
+// más aplicaciones de JavaScript
+
+
 // scroll
 
 $(window).on("scroll", function(){
