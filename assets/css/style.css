@@ -1,10 +1,12 @@
+/* estilos generales */
+
 body {
     background-color: #262626;
     color: white;
     font-family: "Maven Pro", sans-serif;
 }
 
-.bold {
+h2 {
     font-weight: 600;
 }
 
@@ -18,13 +20,20 @@ hr {
 }
 
 section {
-    margin-bottom: 80px;
+    padding-top: 80px;
 }
 
+/* destacados */
+
+.card {
+    border: none;
+}
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
+
+/* footer */
 
 footer a {
     color: white;
