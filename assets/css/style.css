@@ -78,7 +78,7 @@ footer a {
 /* mediaq */
 
 @media (max-width: 768px) {
-
+    
     .container {
         padding-left: 40px;
         padding-right: 40px;
