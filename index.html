@@ -22,170 +22,191 @@
 
 <body>
 
-  <!-- Navbar -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-none">
-      <div class="container">
-        <img src="assets/img/viajes.svg" height="30" alt="logo viajes"><h4 class="d-inline ps-3 logo">VIAJES CHILE</h4>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#carouselExampleControls">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-none d-md-block" href="#quienessomos">Quiénes somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#destacados">Destacados</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-            </li>            
-          </ul>
+  <!-- Navbar 1º aplicación de recurso bootstrap: "smooth scroll" y Aplicación de Javascript: collapse en el nabvar -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-none">
+    <div class="container">
+      <img src="assets/img/viajes.svg" height="30" alt="logo viajes"><h4 class="d-inline ps-3 logo">VIAJES CHILE</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#carouselExampleControls">Inicio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link d-none d-md-block" href="#quienessomos">Quiénes somos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#destacados">Destacados</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+          </li>            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Carrusel Aplicación de Javascript: carousel -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Desierto de Atacama">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Isla de Pascua">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pingüino de Humboldt">
         </div>
       </div>
-    </nav>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
 
-    <!-- Carrusel -->
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Desierto de Atacama">
+  <!-- Quiénes Somos 2º aplicación de recurso bootstrap: grilla -->
+
+  <section id="quienessomos" class="d-none d-md-block">
+      <div class="container">
+          <h2 class="text-center bold">¿Quiénes somos?</h2>
+          <hr>
+          <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="bg-info text-light fa-2x text-center">
+                  <i class="fas fa-plane"></i>
+                </div>
+                <h5 class="textoq mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti cumque animi ratione. Dicta aliquid unde consequatur! Iste inventore provident dolore. Impedit fugiat cumque iure voluptatibus. At error quis tempora voluptate aliquam earum vero nobis perspiciatis sequi ad accusamus numquam, iusto officia. Laudantium iusto incidunt laborum quisquam voluptates quae vel omnis sint deserunt reiciendis. Harum neque qui iure quia vitae explicabo dolorum laudantium quos voluptas corrupti odio, amet consequuntur unde delectus sequi deleniti dolores velit, saepe porro iusto nihil, ullam esse? Minima repellat, nostrum consequatur ullam, quos totam delectus iure nam tempore fuga architecto blanditiis ratione aliquid harum neque distinctio. Eaque voluptatum ad voluptate distinctio nesciunt non. Odit necessitatibus vitae omnis tempora quidem quo delectus praesentium. Vero eum facilis exercitationem est similique facere quam placeat culpa, quae, autem dicta adipisci quod provident in libero.</h5>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="bg-info text-light fa-2x text-center">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <h5 class="textoq mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti cumque animi ratione. Dicta aliquid unde consequatur! Iste inventore provident dolore. Impedit fugiat cumque iure voluptatibus. At error quis tempora voluptate aliquam earum vero nobis perspiciatis sequi ad accusamus numquam, iusto officia. Laudantium iusto incidunt laborum quisquam voluptates quae vel omnis sint deserunt reiciendis. Harum neque qui iure quia vitae explicabo dolorum laudantium quos voluptas corrupti odio, amet consequuntur unde delectus sequi deleniti dolores velit, saepe porro iusto nihil, ullam esse? Minima repellat, nostrum consequatur ullam, quos totam delectus iure nam tempore fuga architecto blanditiis ratione aliquid harum neque distinctio. Eaque voluptatum ad voluptate distinctio nesciunt non. Odit necessitatibus vitae omnis tempora quidem quo delectus praesentium. Vero eum facilis exercitationem est similique facere quam placeat culpa, quae, autem dicta adipisci quod provident in libero.</h5>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="bg-info text-light fa-2x text-center">
+                  <i class="fas fa-route"></i>
+                </div>
+                <h5 class="textoq mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti cumque animi ratione. Dicta aliquid unde consequatur! Iste inventore provident dolore. Impedit fugiat cumque iure voluptatibus. At error quis tempora voluptate aliquam earum vero nobis perspiciatis sequi ad accusamus numquam, iusto officia. Laudantium iusto incidunt laborum quisquam voluptates quae vel omnis sint deserunt reiciendis. Harum neque qui iure quia vitae explicabo dolorum laudantium quos voluptas corrupti odio, amet consequuntur unde delectus sequi deleniti dolores velit, saepe porro iusto nihil, ullam esse? Minima repellat, nostrum consequatur ullam, quos totam delectus iure nam tempore fuga architecto blanditiis ratione aliquid harum neque distinctio. Eaque voluptatum ad voluptate distinctio nesciunt non. Odit necessitatibus vitae omnis tempora quidem quo delectus praesentium. Vero eum facilis exercitationem est similique facere quam placeat culpa, quae, autem dicta adipisci quod provident in libero.</h5>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Isla de Pascua">
+      </div>
+  </section>
+
+
+  <!-- Destacados 3º aplicación de recurso bootstrap card y Aplicación de Javascript: tooltip -->
+
+  <section id="destacados" class="text-center">
+      <div class="container">
+          <h2>Destacados</h2>
+          <hr>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+              <div class="col">
+                <div class="card h-100 bg-info">
+                  <img src="assets/img/card1.jpg" class="card-img-top" alt="caleta tortel">
+                  <div class="card-body">
+                    <h5 class="card-title">Caleta Tortel</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias alias facere expedita! Recusandae atque ullam, quod laboriosam provident incidunt itaque veniam.</p>
+                    <div class="d-grid mx auto">
+                      <a href="#destacados" class="btn btn-light btn-sm" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Más ingformación sobre rutas, alojamiento y costos">Más información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg-info">
+                  <img src="assets/img/card2.jpg" class="card-img-top" alt="atacama">
+                  <div class="card-body">
+                    <h5 class="card-title">Desierto de Atacama</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi libero molestias asperiores. Quis, deleniti cumque voluptates voluptate nobis velit, tempora nulla nesciunt, asperiores sit eaque similique vero nisi non reiciendis.</p>
+                    <div class="d-grid mx auto">
+                      <a href="#destacados" class="btn btn-light btn-sm" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Más información sobre rutas, alojamiento y costos">Más información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg-info">
+                  <img src="assets/img/card3.jpg" class="card-img-top" alt="salar de atacama">
+                  <div class="card-body">
+                    <h5 class="card-title">Salar de Atacama</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus sit voluptatem, officiis corporis sequi dolor.</p>
+                    <div class="d-grid mx auto">
+                      <a href="#destacados" class="btn btn-light btn-sm" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Más información sobre rutas, alojamiento y costos">Más información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg-info">
+                  <img src="assets/img/card4.jpg" class="card-img-top" alt="nothofagus">
+                  <div class="card-body">
+                    <h5 class="card-title">Bosque Valdiviano</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore, consectetur porro earum distinctio odit recusandae, omnis assumenda soluta non beatae dolor.</p>
+                    <div class="d-grid mx auto">
+                      <a href="#destacados" class="btn btn-light btn-sm" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Más información sobre rutas, alojamiento y costos">Más información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>                
+
           </div>
-          <div class="carousel-item">
-            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pingüino de Humboldt">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <!-- Quiénes Somos -->
+      </div>
+  </section>
 
-    <section id="quienessomos" class="d-none d-md-block">
-        <div class="container">
-            <h2 class="text-center bold">¿Quiénes somos?</h2>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-md-4">
-                  <div class="bg-info text-light fa-2x text-center">
-                    <i class="fas fa-plane"></i>
-                  </div>
-                  <h5 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti cumque animi ratione. Dicta aliquid unde consequatur! Iste inventore provident dolore. Impedit fugiat cumque iure voluptatibus. At error quis tempora voluptate aliquam earum vero nobis perspiciatis sequi ad accusamus numquam, iusto officia. Laudantium iusto incidunt laborum quisquam voluptates quae vel omnis sint deserunt reiciendis. Harum neque qui iure quia vitae explicabo dolorum laudantium quos voluptas corrupti odio, amet consequuntur unde delectus sequi deleniti dolores velit, saepe porro iusto nihil, ullam esse? Minima repellat, nostrum consequatur ullam, quos totam delectus iure nam tempore fuga architecto blanditiis ratione aliquid harum neque distinctio. Eaque voluptatum ad voluptate distinctio nesciunt non. Odit necessitatibus vitae omnis tempora quidem quo delectus praesentium. Vero eum facilis exercitationem est similique facere quam placeat culpa, quae, autem dicta adipisci quod provident in libero.</h5>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="bg-info text-light fa-2x text-center">
-                    <i class="fas fa-mountain"></i>
-                  </div>
-                  <h5 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti cumque animi ratione. Dicta aliquid unde consequatur! Iste inventore provident dolore. Impedit fugiat cumque iure voluptatibus. At error quis tempora voluptate aliquam earum vero nobis perspiciatis sequi ad accusamus numquam, iusto officia. Laudantium iusto incidunt laborum quisquam voluptates quae vel omnis sint deserunt reiciendis. Harum neque qui iure quia vitae explicabo dolorum laudantium quos voluptas corrupti odio, amet consequuntur unde delectus sequi deleniti dolores velit, saepe porro iusto nihil, ullam esse? Minima repellat, nostrum consequatur ullam, quos totam delectus iure nam tempore fuga architecto blanditiis ratione aliquid harum neque distinctio. Eaque voluptatum ad voluptate distinctio nesciunt non. Odit necessitatibus vitae omnis tempora quidem quo delectus praesentium. Vero eum facilis exercitationem est similique facere quam placeat culpa, quae, autem dicta adipisci quod provident in libero.</h5>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="bg-info text-light fa-2x text-center">
-                    <i class="fas fa-route"></i>
-                  </div>
-                  <h5 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti cumque animi ratione. Dicta aliquid unde consequatur! Iste inventore provident dolore. Impedit fugiat cumque iure voluptatibus. At error quis tempora voluptate aliquam earum vero nobis perspiciatis sequi ad accusamus numquam, iusto officia. Laudantium iusto incidunt laborum quisquam voluptates quae vel omnis sint deserunt reiciendis. Harum neque qui iure quia vitae explicabo dolorum laudantium quos voluptas corrupti odio, amet consequuntur unde delectus sequi deleniti dolores velit, saepe porro iusto nihil, ullam esse? Minima repellat, nostrum consequatur ullam, quos totam delectus iure nam tempore fuga architecto blanditiis ratione aliquid harum neque distinctio. Eaque voluptatum ad voluptate distinctio nesciunt non. Odit necessitatibus vitae omnis tempora quidem quo delectus praesentium. Vero eum facilis exercitationem est similique facere quam placeat culpa, quae, autem dicta adipisci quod provident in libero.</h5>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Destacados -->
+  <!-- Contacto aplicación de TypeForm -->
 
-    <section id="destacados" class="text-center">
-        <div class="container">
-            <h2>Destacados</h2>
-            <hr>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                <div class="col">
-                  <div class="card h-100 bg-info">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="caleta tortel">
-                    <div class="card-body">
-                      <h5 class="card-title">Caleta Tortel</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias alias facere expedita! Recusandae atque ullam, quod laboriosam provident incidunt itaque veniam.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 bg-info">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="atacama">
-                    <div class="card-body">
-                      <h5 class="card-title">Desierto de Atacama</h5>
-                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi libero molestias asperiores. Quis, deleniti cumque voluptates voluptate nobis velit, tempora nulla nesciunt, asperiores sit eaque similique vero nisi non reiciendis.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 bg-info">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="salar de atacama">
-                    <div class="card-body">
-                      <h5 class="card-title">Salar de Atacama</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus sit voluptatem, officiis corporis sequi dolor.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 bg-info">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="nothofagus">
-                    <div class="card-body">
-                      <h5 class="card-title">Bosque Valdiviano</h5>
-                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore, consectetur porro earum distinctio odit recusandae, omnis assumenda soluta non beatae dolor.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>                
+  <section id="contacto" class="text-center">
+      <div class="container">
+          <h2>Contacto</h2>
+          <hr>
+          <div data-tf-widget="AZK3zHjc" data-tf-iframe-props="title=Registration Form" style="width:100%;height:500px;"></div>
+      </div>
+  </section>
 
-            </div>
 
-        </div>
-    </section>
+  <!-- Footer -->
 
-    <!-- Contacto -->
+  <footer class="bg-info py-2 mt-5">
+      <div class="container text-center">
+          <h3 class="logo">VIAJES CHILE
+              <span class="ms-2">
+                  <a href="https://github.com"><i class="fab fa-github-square"></i></a>
+                  <a href="https://wwww.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                  <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>           
+              </span>
+          </h3>
+      </div>
+  </footer>
 
-    <section id="contacto" class="text-center">
-        <div class="container">
-            <h2>Contacto</h2>
-            <hr>
-            <div data-tf-widget="AZK3zHjc" data-tf-iframe-props="title=Registration Form" style="width:100%;height:500px;"></div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+  
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- CDN JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- JavaScript propio -->
+  <script src="assets/js/main.js"></script>
+  <!-- Script de TypeForm -->
+  <script src="//embed.typeform.com/next/embed.js"></script>
 
-    <footer class="bg-info py-2 mt-5">
-        <div class="container text-center">
-            <h3 class="logo">VIAJES CHILE
-                <span class="ms-2">
-                    <a href="https://github.com"><i class="fab fa-github-square"></i></a>
-                    <a href="https://wwww.linkedin.com"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>           
-                </span>
-            </h3>
-        </div>
-    </footer>
-
-    <!-- JQuery - CDN JavaScript - JavaScript propio -->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <script src="assets/js/main.js"></script>
-
-    <script src="//embed.typeform.com/next/embed.js"></script>
+    
     
 </body>
 </html>
