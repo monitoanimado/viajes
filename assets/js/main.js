@@ -27,3 +27,12 @@ var tooltipTriggerList =
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+// hover sobre cards de destacados
+
+$(".card-body").hover(function(){
+    $(this).css("background-color", "black");
+},
+function (){
+    $(this).css("background-color", "#5CD6C8")
+});
